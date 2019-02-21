@@ -8,4 +8,9 @@ public class LogOut {
     public void iLogOut() {
         System.out.println("I LOGGED OUT!");
     }
+
+    @Then("^Click on logout button$")
+    public void logOutButton() {
+        System.out.println("I clcked logged out button!");
+    }
 }
