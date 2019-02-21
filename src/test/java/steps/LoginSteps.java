@@ -1,5 +1,6 @@
 package steps;
 
+import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -33,5 +34,10 @@ public class LoginSteps {
     @And("^I click on submit button$")
     public void iClickOnSubmitButton() {
         System.out.println("I click on submit button");
+    }
+
+    @When("^I enter \"([^\"]*)\" and \"([^\"]*)\"$")
+    public void iEnterAnd(String username, String password){
+        System.out.println("Username : "+username +" Password : "+password);
     }
 }
